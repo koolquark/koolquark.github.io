@@ -29,18 +29,22 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <meta name="author" content="#koolquark" />
-    <meta name="description" content="" />
+<meta name="author" content="#koolquark" />
+<meta name="description" content="Notes on Python re Module Notes on Pexpect Module Patterns shall be passed to pexpect's expect funtion Default timeout for expect is 30s After timeout TIMEOUT exception is raised. Python Regular expression special characters Pexpect regular expression matching is different in following ways Regex match happens one character at a …" />
+<meta name="keywords" content="">
 <meta property="og:site_name" content="Code Adventures"/>
-<meta property="og:type" content="blog"/>
-<meta property="og:title" content="Code Adventures"/>
-<meta property="og:description" content=""/>
+<meta property="og:title" content="Notes on Pexpect"/>
+<meta property="og:description" content="Notes on Python re Module Notes on Pexpect Module Patterns shall be passed to pexpect's expect funtion Default timeout for expect is 30s After timeout TIMEOUT exception is raised. Python Regular expression special characters Pexpect regular expression matching is different in following ways Regex match happens one character at a …"/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content=""/>
+<meta property="og:url" content="/notes-on-pexpect.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2017-11-13 22:11:00+05:30"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="/author/koolquark.html">
+<meta property="article:section" content="Python"/>
 <meta property="og:image" content="/images/KQ1.jpg">
 
-  <title>Code Adventures &ndash;     Posts by #koolquark
-:</title>
+  <title>Code Adventures &ndash; Notes on Pexpect</title>
 
 </head>
 <body>
@@ -88,45 +92,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     </nav>
 
-
-
-<article>
+<article class="single">
   <header>
-    <h2><a href="/linux-ip-command.html#linux-ip-command">Linux IP Command</a></h2>
-    <p>
-          Posted on Mon 13 November 2017 in <a href="/category/linux.html">Linux</a>
-
-
-
-    </p>
-  </header>
-  <div>
-      <p>In this article we will explore the Linux <strong>ip</strong> command and its various uses.</p>
-<h1>ip Command Synopsis</h1>
-<div class="highlight"><pre><span></span><span class="n">Usage</span><span class="o">:</span> <span class="n">ip</span> <span class="o">[</span> <span class="n">OPTIONS</span> <span class="o">]</span> <span class="n">OBJECT</span> <span class="o">{</span> <span class="n">COMMAND</span> <span class="o">|</span> <span class="n">help</span> <span class="o">}</span>
-       <span class="n">ip</span> <span class="o">[</span> <span class="o">-</span><span class="n">force</span> <span class="o">]</span> <span class="o">-</span><span class="n">batch</span> <span class="n">filename</span>
-<span class="n">where</span>  <span class="n">OBJECT</span> <span class="o">:=</span> <span class="o">{</span> <span class="n">link</span> <span class="o">|</span> <span class="n">addr</span> <span class="o">|</span> <span class="n">addrlabel</span> <span class="o">|</span> <span class="n">route</span> <span class="o">|</span> <span class="n">rule</span> <span class="o">|</span> <span class="n">neigh</span> <span class="o">|</span> <span class="n">ntable</span> <span class="o">|</span>
-                   <span class="n">tunnel</span> <span class="o">|</span> <span class="n">tuntap</span> <span class="o">|</span> <span class="n">maddr</span> <span class="o">|</span> <span class="n">mroute</span> <span class="o">|</span> <span class="n">mrule</span> <span class="o">|</span> <span class="n">monitor</span> <span class="o">|</span> <span class="n">xfrm</span> <span class="o">|</span>
-                   <span class="n">netns</span> <span class="o">|</span> <span class="n">l2tp</span> <span class="o">|</span> <span class="n">tcp_metrics</span> <span class="o">|</span> <span class="n">token</span> <span class="o">}</span>
-       <span class="n">OPTIONS</span> <span class="o">:=</span> <span class="o">{</span> <span class="o">-</span><span class="n">V</span><span class="o">[</span><span class="n">ersion …</span></pre></div>
-      <br>
-      <a class="btn" href="/linux-ip-command.html#linux-ip-command">    Continue reading
-</a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2><a href="/notes-on-pexpect.html#notes-on-pexpect">Notes on Pexpect</a></h2>
+    <h1 id="notes-on-pexpect">Notes on Pexpect</h1>
     <p>
           Posted on Mon 13 November 2017 in <a href="/category/python.html">Python</a>
 
 
-
     </p>
   </header>
+
+
   <div>
-      <h1>Notes on Python re Module</h1>
+    <h1>Notes on Python re Module</h1>
 <h1>Notes on Pexpect Module</h1>
 <ul>
 <li>Patterns shall be passed to pexpect's expect funtion</li>
@@ -134,42 +112,56 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li>After timeout <strong>TIMEOUT</strong> exception is raised.</li>
 <li><a href="https://docs.python.org/2/library/re.html">Python Regular expression special characters</a></li>
 <li>Pexpect regular expression matching is different in following ways<ul>
-<li>Regex match happens one character at a …</li></ul></li></ul>
-      <br>
-      <a class="btn" href="/notes-on-pexpect.html#notes-on-pexpect">    Continue reading
-</a>
+<li>Regex match happens one character at a time ( not a buffered one)</li>
+<li>End of line match using <strong>$</strong> does not work</li>
+<li>Best way to match end of line is to match <strong>\r\n</strong></li>
+<li>Pexepct uses a pseudo-tty and converts <strong>\n</strong> from child to <strong>\r\n</strong></li>
+<li>A unix command may send only <strong>\n</strong>, but pexpect makes it <strong>\r\n</strong></li>
+<li>Pexpect compiles all regex with <code>re.DOTALL</code></li>
+<li>Pexpect match is non-greedy ; so all look ahead matching requests will only get minimal match<ul>
+<li><code>child.expect('.+')</code> will return only one character.</li>
+<li><code>child.expect('.*')</code> will return only no character.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Pexpect <em>after</em> and <em>before</em><ul>
+<li><em>after</em>  contains text that was matched by expected pattern.</li>
+<li><em>before</em> contains text up to expected pattern.</li>
+</ul>
+</li>
+</ul>
+<h2>Matching End of Lines</h2>
+<div class="highlight"><pre><span></span>child.expect(&#39;\r\n&#39;)
+</pre></div>
+
+
+<h2>Expecting a pattern before End-of-Line</h2>
+<div class="highlight"><pre><span></span>child.expect(&#39;\w+\r\n&#39;)
+</pre></div>
   </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2><a href="/python-code-interleave-two-files-line-by-line.html#python-code-interleave-two-files-line-by-line">Python Code : Interleave two files line by line.</a></h2>
+  <div class="tag-cloud">
     <p>
-          Posted on Mon 13 November 2017 in <a href="/category/python.html">Python</a>
-
-
-
     </p>
-  </header>
-  <div>
-      <h1>Interleave two files line by line</h1>
-<p>The following python code displays the interleaved output from two files on
-a line by line basis. Also the characters differing are colored different.
-The code  is very basic. <a href="https://pypi.python.org/pypi/colorama">colorama</a>
-python package is used to generate colored output.</p>
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
-<span class="kn">from</span> <span class="nn">colorama</span> <span class="kn">import</span> <span class="n">init …</span></pre></div>
-      <br>
-      <a class="btn" href="/python-code-interleave-two-files-line-by-line.html#python-code-interleave-two-files-line-by-line">    Continue reading
-</a>
   </div>
+
+
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'koolquark-github-io';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>
+        Please enable JavaScript to view comments.
+
+</noscript>
 </article>
-
-  <div class="pagination">
-  </div>
-
-
-
 
     <footer>
 <p>

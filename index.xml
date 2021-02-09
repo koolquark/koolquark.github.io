@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>KQ Blog</title>
-    <link>http://koolquark.github.io/</link>
+    <link>https://koolquark.github.io/</link>
     <description>Recent content on KQ Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Feb 2021 16:07:24 +0530</lastBuildDate><atom:link href="http://koolquark.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Feb 2021 16:07:24 +0530</lastBuildDate><atom:link href="https://koolquark.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Developing in Go</title>
-      <link>http://koolquark.github.io/posts/developing-in-go/</link>
+      <link>https://koolquark.github.io/posts/developing-in-go/</link>
       <pubDate>Tue, 09 Feb 2021 16:07:24 +0530</pubDate>
       
-      <guid>http://koolquark.github.io/posts/developing-in-go/</guid>
+      <guid>https://koolquark.github.io/posts/developing-in-go/</guid>
       <description>Introduction A log of my daily engagement with Go language.
 Log </description>
     </item>
